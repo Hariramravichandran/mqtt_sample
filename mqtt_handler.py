@@ -20,7 +20,7 @@ def on_message(client, userdata, msg):
         "timestamp": datetime.now()
     }
     collection.insert_one(message)
-    print(f"Inserted message: {message}")
+    
 
 mqtt_client = mqtt.Client()
 mqtt_client.on_connect = on_connect
