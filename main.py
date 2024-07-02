@@ -34,5 +34,4 @@ async def status_count(time_range: TimeRange):
     ]
     
     result = list(collection.aggregate(pipeline))
-    print(result)
     return result
